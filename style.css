@@ -6,9 +6,11 @@ html, body {
     padding: 0;
     margin: 0;
     height: 1000px;
-    width: 1600px;
+    width: 100em;
     border: 0;
     background-color: black;
+    position: relative;
+    left: 40px;
 }
 
 main {
@@ -16,6 +18,8 @@ main {
     position: relative;
     align-items: center;
     justify-content: center;
+    font-family: sans-serif;
+    right: 100px;
 }
 
 .grid {
@@ -26,28 +30,184 @@ main {
 }
 
 .header {
-    border: 1px solid lightgrey;
-    background-color: grey;
-    color: wheat;
+    display: flex;
+    border: 1px solid rgb(136, 132, 132);
+    background-color: rgb(68, 65, 65);
+    color: rgb(241, 236, 227);
     grid-row: 1;
     grid-column: 1 / 12;
 }
 
-.sidebar {
-    border: 1px solid lightgrey;
-    color: white;
+.logo {
+    color: gold;
+    font-size: 60px;
+    position: relative;
+    left: 15px;
+    top: 8px;
+}
+
+.logo-text {
+    position: relative;
+    left: 20px;
+    top: 20px;
+    font-size: 80%;
+}
+
+.buttons {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    left: 30px;
+    font-size: 130%;
+}
+
+.tabs {
+    margin: 10px;
+}
+
+.articles-button {
+    margin: 10px;
+}
+
+.forum {
+    margin: 10px;
+}
+
+.wiki {
+    position: relative;
+    margin: 10px;
+    right: 7px;
+}
+
+.publish {
+    margin: 10px;
+    display: inline;
+}
+
+.plus {
+    color: gold;
+    position: relative;
+    font-size: 80%;
+    right: 10px;
+    top: 12px;
+}
+
+.publish-button-text {
+    position: relative;
+    left: 0px;
+    bottom: 10px;
+}
+
+.pro {
+    margin: 10px;
+    color: rgb(238, 83, 83);
+}
+
+.search-bar {
+    position: relative;
+    top: 23px;
+    left: 50px;
+    height: 40px;
+    width: 350px;
+    border: 1px solid grey;
     background-color: black;
 }
 
+.search-button {
+    position: relative;
+    left: 348px;
+    bottom: 19.5px;
+    height: 40px;
+    width: 100px;
+    border: 1px solid grey;
+    background-color:rgb(43, 42, 42);
+    text-align: left;
+    padding-left: 16px;
+    padding-top: 10px;
+}
+
+.bell{
+    position: relative;
+    bottom: 50px;
+    left: 520px;
+}
+
+.notify-quantity {
+    position: relative;
+    text-align: right;
+    bottom: 74px;
+    left: 255px;
+    color: grey;
+}
+
+.input-text {
+    text-align: left;
+    position: relative;
+    justify-content: center;
+    color: grey;
+    top: 10px;
+    left: 20px;
+}
+
+
+.sidebar {
+    display: flex;
+    border: 1px solid rgb(136, 132, 132);
+    color: white;
+    background-color: black;
+    justify-content: center;
+}
+
+.username {
+    position: relative;
+    top: 20px;
+    color: orange;
+    left: 20px;
+}
+.my-tabs {
+    position: relative;
+    top: 50px;
+    right: 60px;
+    color: rgb(241, 236, 227);
+}
+
+.my-tabs-number {
+    position: relative;
+    left: 65px;
+    bottom: 18px;
+    color: grey;
+}
+
 .article {
-    border: 1px solid lightgrey;
+    border: 1px solid rgb(136, 132, 132);
     background-color: white;
     grid-row: 2 / auto;
     grid-column: 2;
 }
 
+.article-header {
+    position: relative;
+    text-align: left;
+    top: 20px;
+    left: 20px;
+    font-size: 170%;
+}
+
+.views {
+    position: relative;
+    font-size: 50%;
+    top: 20px;
+}
+
+.article-body {
+    position: relative;
+    top: 50px;
+    left: 20px;
+}
+
 .footer {
-    border: 1px solid lightgrey;
+    border: 1px solid rgb(136, 132, 132);
     background-color: grey;
     grid-column: 1 / 12;
     grid-row: 3;
